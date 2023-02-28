@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="folders">folders</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="name_folder">Name folder</string>
+    <string name="delete_folder">delete folder</string>
+    <string name="title">Title</string>
+    <string name="type_something">Type something....</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="add_password">Add Password</string>
+    <string name="delete_password">Delete Password</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+</resources>

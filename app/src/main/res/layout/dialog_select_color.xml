@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin8"
+    android:paddingEnd="@dimen/margin8"
+    android:paddingStart="@dimen/margin8"
+    android:paddingBottom="@dimen/textSize24"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnOne"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:backgroundTint="@color/colorSelectOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnFive" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFour"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectFour"
+        app:layout_constraintEnd_toStartOf="@+id/btnFive"
+        app:layout_constraintStart_toEndOf="@+id/btnThree"
+        app:layout_constraintTop_toTopOf="@+id/btnFive" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnThree"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnFive" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTwo"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectTwo"
+        app:layout_constraintEnd_toStartOf="@+id/btnThree"
+        app:layout_constraintStart_toEndOf="@+id/btnOne"
+        app:layout_constraintTop_toTopOf="@+id/btnFive" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFive"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+
+        android:layout_marginTop="@dimen/margin16"
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectOneFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClose" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTen"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+        android:layout_marginTop="@dimen/margin16"
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectTen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFive"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSix"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectSix"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTen"
+         />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnEight"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectEight"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTen"
+        app:layout_constraintEnd_toStartOf="@+id/btnTen"
+        app:layout_constraintStart_toEndOf="@+id/btnSix"
+        app:layout_constraintTop_toTopOf="@+id/btnTen"
+         />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNine"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectNine"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTen"
+        app:layout_constraintEnd_toStartOf="@+id/btnTen"
+        app:layout_constraintStart_toEndOf="@+id/btnEight"
+        app:layout_constraintTop_toTopOf="@+id/btnTen"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSeven"
+        android:layout_width="@dimen/margin40"
+        android:layout_height="@dimen/margin40"
+
+        android:clickable="true"
+        app:backgroundTint="@color/colorSelectSeven"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTen"
+        app:layout_constraintEnd_toStartOf="@+id/btnEight"
+        app:layout_constraintStart_toEndOf="@+id/btnSix"
+        app:layout_constraintTop_toTopOf="@+id/btnTen"
+       />
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:background="@color/purple_700"
+        android:layout_width="@dimen/margin32"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
