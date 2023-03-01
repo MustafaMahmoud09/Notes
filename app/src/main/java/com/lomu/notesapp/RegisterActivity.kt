@@ -24,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
                     finish()
                 },1000)
             }else{
-                InputDataRegister.error="The data is wrong"
+                InputDataRegister.error=resources.getString(R.string.The_data_is_wrong)
             }
         }
         }

@@ -1,15 +1,28 @@
 <resources>
-    <string name="app_name">Notes</string>
-    <string name="folders">folders</string>
-    <string name="save">Save</string>
-    <string name="cancel">Cancel</string>
-    <string name="name_folder">Name folder</string>
-    <string name="delete_folder">delete folder</string>
-    <string name="title">Title</string>
-    <string name="type_something">Type something....</string>
-    <string name="confirm_password">Confirm password</string>
-    <string name="add_password">Add Password</string>
-    <string name="delete_password">Delete Password</string>
-    <string name="password">Password</string>
-    <string name="register">Register</string>
+    <string name="app_name" translatable="false">Notes</string>
+    <string name="folders" translatable="false">folders</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="name_folder" translatable="false">Name folder</string>
+    <string name="delete_folder" translatable="false">delete folder</string>
+    <string name="title" translatable="false">Title</string>
+    <string name="type_something" translatable="false">Type something....</string>
+    <string name="confirm_password" translatable="false">Confirm password</string>
+    <string name="add_password" translatable="false">Add Password</string>
+    <string name="delete_password" translatable="false">Delete Password</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="Are_you_sure_you_want_to_delete_all_notes_in" translatable="false">Are you sure you want to delete all notes in</string>
+    <string name="Yes" translatable="false">Yes</string>
+    <string name="No" translatable="false">No</string>
+    <string name="Are_you_sure_you_want_to_delete" translatable="false">Are you sure you want to delete</string>
+    <string name="Delete_Folder" translatable="false">Delete Folder</string>
+    <string name="Delete_All_Notes" translatable="false">Delete All Notes</string>
+    <string name="The_name_has_been_used_before" translatable="false">The name has been used before</string>
+    <string name="Delete" translatable="false">Delete</string>
+    <string name="Error_Input" translatable="false">The input is wrong</string>
+    <string name="The_data_is_wrong" translatable="false">The data is wrong</string>
+    <string name="Are_you_sure_you_want_to_delete_the_note" translatable="false">Are you sure you want to delete the note</string>
+    <string name="qu">\?</string>
+    <string name="privacy">Privacy</string>
 </resources>

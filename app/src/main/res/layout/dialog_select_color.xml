@@ -12,7 +12,8 @@
     android:paddingBottom="@dimen/textSize24"
     >
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnOne"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -22,7 +23,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnFive" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnFour"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -32,7 +34,8 @@
         app:layout_constraintStart_toEndOf="@+id/btnThree"
         app:layout_constraintTop_toTopOf="@+id/btnFive" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnThree"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -43,8 +46,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnFive" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnTwo"
+    <ImageButton
+        android:background="@drawable/floating"        android:id="@+id/btnTwo"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
 
@@ -54,7 +57,8 @@
         app:layout_constraintStart_toEndOf="@+id/btnOne"
         app:layout_constraintTop_toTopOf="@+id/btnFive" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnFive"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -65,7 +69,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClose" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnTen"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -76,7 +81,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btnFive"
         />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnSix"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -88,7 +94,8 @@
         app:layout_constraintTop_toTopOf="@+id/btnTen"
          />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnEight"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -100,7 +107,8 @@
         app:layout_constraintTop_toTopOf="@+id/btnTen"
          />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnNine"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"
@@ -113,7 +121,8 @@
         app:layout_constraintTop_toTopOf="@+id/btnTen"
         />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
+        android:background="@drawable/floating"
         android:id="@+id/btnSeven"
         android:layout_width="@dimen/margin40"
         android:layout_height="@dimen/margin40"

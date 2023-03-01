@@ -25,8 +25,8 @@
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/margin52"
+        android:layout_height="@dimen/margin52"
         android:layout_marginTop="@dimen/margin8"
         app:layout_constraintEnd_toEndOf="@+id/imageUser"
         app:layout_constraintStart_toStartOf="@+id/imageUser"

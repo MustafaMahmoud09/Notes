@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="layout_one" type="layout" tools:ignore="MissingDefaultResource">@layout/activity_main</item>
+    <item name="layout_two" type="layout" tools:ignore="MissingDefaultResource">@layout/activity_category</item>
+    <item name="layout_three" type="layout" tools:ignore="MissingDefaultResource">@layout/activity_first</item>
+    <item name="layout_four" type="layout" tools:ignore="MissingDefaultResource">@layout/activity_register</item>
+    <item name="layout_five" type="layout" tools:ignore="MissingDefaultResource">@layout/activity_show_note</item>
+    <item name="layout_six" type="layout" tools:ignore="MissingDefaultResource">@layout/activity_write_note</item>
+    <item name="layout_seven" type="layout" tools:ignore="MissingDefaultResource">@layout/dialog_add_category</item>
+    <item name="layout_eight" type="layout" tools:ignore="MissingDefaultResource">@layout/dialog_chose</item>
+    <item name="layout_nine" type="layout" tools:ignore="MissingDefaultResource">@layout/dialog_password</item>
+    <item name="layout_ten" type="layout" tools:ignore="MissingDefaultResource">@layout/dialog_select_color</item>
+    <item name="layout_eleven" type="layout" tools:ignore="MissingDefaultResource">@layout/item_in_grid</item>
+    <item name="layout_twelve" type="layout" tools:ignore="MissingDefaultResource">@layout/item_in_recycler</item>
+    <item name="layout_13" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_add_24</item>
+    <item name="layout_14" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_arrow_back_24</item>
+    <item name="layout_15" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_check_24</item>
+    <item name="layout_16" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_close_24</item>
+    <item name="layout_17" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_color_lens_24</item>
+    <item name="layout_18" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_delete_24</item>
+    <item name="layout_19" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_edit_24</item>
+    <dimen name="margin16">36dp</dimen>
+    <dimen name="margin32">70dp</dimen>
+    <dimen name="margin24">52dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="margin4">10dp</dimen>
+    <dimen name="textSize12">24sp</dimen>
+    <dimen name="margin104">208dp</dimen>
+    <dimen name="textSize30">60sp</dimen>
+    <dimen name="textSize32">64sp</dimen>
+    <dimen name="margin64">172dp</dimen>
+    <dimen name="margin8">20dp</dimen>
+    <dimen name="margin48">100dp</dimen>
+    <dimen name="margin40">84dp</dimen>
+    <dimen name="margin90">184dp</dimen>
+    <dimen name="textSize24">48sp</dimen>
+    <dimen name="textSize14">28sp</dimen>
+    <dimen name="textSize20">40sp</dimen>
+    <dimen name="margin52">108dp</dimen>
+    <dimen name="margin70">144dp</dimen>
+    <dimen name="margin50">104dp</dimen>
+    <dimen name="margin55">114dp</dimen>
+    <dimen name="margin140">284dp</dimen>
+    <dimen name="margin150">304dp</dimen>
+    <dimen name="margin120">244dp</dimen>
+    <dimen name="textSize16">32sp</dimen>
+    <dimen name="textSize18">36sp</dimen>
+    <dimen name="margin12">28dp</dimen>
+    <dimen name="margin18">40dp</dimen>
+    <dimen name="margin20">44dp</dimen>
+    <dimen name="margin110">260dp</dimen>
+    <dimen name="heightInput">104dp</dimen>
+    <dimen name="heightInputCount">160dp</dimen>
+    <dimen name="height_btn_register">110dp</dimen>
+    <dimen name="margin56">116dp</dimen>
+</resources>

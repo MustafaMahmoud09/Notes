@@ -72,11 +72,11 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
     ) {
         createDialog!!.dismiss()
         dialog = AlertDialog.Builder(context)
-        dialog!!.setMessage("Are you sure you want to delete all notes in ${item.nameCategory}?")
-        dialog!!.setPositiveButton("Yes") { _, _ ->
+        dialog!!.setMessage("${context.resources.getString(R.string.Are_you_sure_you_want_to_delete_all_notes_in)} ${item.nameCategory}${context.resources.getString(R.string.qu)}")
+        dialog!!.setPositiveButton(context.resources.getString(R.string.Yes)) { _, _ ->
             codeBtnDeleteNotes(item, position)
         }
-        dialog!!.setNegativeButton("No") { _, _ -> }
+        dialog!!.setNegativeButton(context.resources.getString(R.string.No)) { _, _ -> }
         createDialog=dialog!!.create()
         createDialog!!.show()
     }
@@ -94,11 +94,11 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
     ) {
         createDialog!!.dismiss()
         dialog = AlertDialog.Builder(context)
-        dialog!!.setMessage("Are you sure you want to delete ${item.nameCategory}?")
-        dialog!!.setPositiveButton("Yes") { _, _ ->
+        dialog!!.setMessage("${context.resources.getString(R.string.Are_you_sure_you_want_to_delete)} ${item.nameCategory}${context.resources.getString(R.string.qu)}")
+        dialog!!.setPositiveButton(context.resources.getString(R.string.Yes)) { _, _ ->
             codeDeleteFolder(item, position)
         }
-        dialog!!.setNegativeButton("No") { _, _ -> }
+        dialog!!.setNegativeButton(context.resources.getString(R.string.No)) { _, _ -> }
         createDialog=dialog!!.create()
         createDialog!!.show()
     }
@@ -111,8 +111,8 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
         notifyItemRangeChanged(position, list.size)
     }
     private fun setTextToChangeNameBtn() {
-        view!!.btnAddPassword.text = "Delete Folder"
-        view!!.btnDeletePassword.text = "Delete All Notes"
+        view!!.btnAddPassword.text = context.resources.getString(R.string.Delete_Folder)
+        view!!.btnDeletePassword.text = context.resources.getString(R.string.Delete_All_Notes)
     }
 
     private fun createDialog() {

@@ -11,10 +11,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.dialog_add_category.view.btnCancelPassword
 import kotlinx.android.synthetic.main.dialog_add_category.view.btnSavePassword
 import kotlinx.android.synthetic.main.dialog_add_category.view.inputPass
-import kotlinx.android.synthetic.main.dialog_chose.*
 import kotlinx.android.synthetic.main.dialog_chose.view.*
-import kotlinx.android.synthetic.main.dialog_password.*
 import kotlinx.android.synthetic.main.dialog_password.view.*
+
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportToolBarAsActionBar()
-        btnAddNewNote.setOnClickListener {
+            btnAddNewFolder.setOnClickListener {
             codeBtnAddCategory()
         }
     }
@@ -62,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                     adapter()
                     create.dismiss()
                 }else{
-                    layout.inputPass.error="The name has been used before"
+                    layout.inputPass.error=resources.getString(R.string.The_name_has_been_used_before)
                 }
             }
         }
@@ -103,7 +102,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun codeDeletePassword() {
         removeDialogAndCreateOrDialog()
-        layoutBtn!!.btnSavePassword.text = "Delete"
+        layoutBtn!!.btnSavePassword.text = resources.getString(R.string.Delete)
         layoutBtn!!.btnSavePassword.setOnClickListener {
             readyToAddPassOrDelete()
             if (passConfirm == pass && pass.length in 4..8) {
@@ -112,12 +111,12 @@ class MainActivity : AppCompatActivity() {
                     edit!!.commit()
                     create!!.dismiss()
                 } else {
-                    layoutBtn!!.inputPass.error = "Error Input"
-                    layoutBtn!!.inputConfirmPass.error = "Error Input"
+                    layoutBtn!!.inputPass.error = resources.getString(R.string.Error_Input)
+                    layoutBtn!!.inputConfirmPass.error = resources.getString(R.string.Error_Input)
                 }
             } else {
-                layoutBtn!!.inputPass.error = "Error Input"
-                layoutBtn!!.inputConfirmPass.error = "Error Input"
+                layoutBtn!!.inputPass.error = resources.getString(R.string.Error_Input)
+                layoutBtn!!.inputConfirmPass.error = resources.getString(R.string.Error_Input)
             }
         }
         layoutBtn!!.btnCancelPassword.setOnClickListener {
@@ -152,8 +151,8 @@ class MainActivity : AppCompatActivity() {
             edit!!.commit()
             create!!.dismiss()
         } else {
-            layoutBtn!!.inputPass.error = "Error Input"
-            layoutBtn!!.inputConfirmPass.error = "Error Input"
+            layoutBtn!!.inputPass.error = resources.getString(R.string.Error_Input)
+            layoutBtn!!.inputConfirmPass.error = resources.getString(R.string.Error_Input)
         }
     }
 

@@ -12,6 +12,7 @@
         android:layout_height="@dimen/margin40"
         android:text="@string/save"
         android:textAllCaps="false"
+        android:textSize="@dimen/textSize14"
         android:background="@drawable/shape_btn_dialog"
         app:backgroundTint="@color/colorTypeNoteRecycler"
         android:layout_marginTop="@dimen/margin24"
@@ -27,6 +28,7 @@
         android:layout_height="@dimen/margin40"
         android:background="@drawable/shape_btn_dialog"
         android:text="@string/cancel"
+        android:textSize="@dimen/textSize14"
         android:textAllCaps="false"
         android:layout_marginEnd="@dimen/margin8"
         app:backgroundTint="@color/colorTypeNoteRecycler"
@@ -38,7 +40,7 @@
         android:id="@+id/inputPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/heightInput"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -55,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
+            android:textSize="@dimen/textSize14"
             />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

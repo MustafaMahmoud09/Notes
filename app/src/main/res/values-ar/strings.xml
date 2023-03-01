@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ملحوظات</string>
+    <string name="folders" translatable="false">مجلدات</string>
+    <string name="save" translatable="false">حفظ</string>
+    <string name="cancel" translatable="false">إلغاء</string>
+    <string name="name_folder" translatable="false">أسم المجلد</string>
+    <string name="delete_folder" translatable="false">أحذف المجلد</string>
+    <string name="title" translatable="false">العنوان</string>
+    <string name="type_something" translatable="false">اكتب شيئا</string>
+    <string name="confirm_password" translatable="false">تاكيد كلمة المرور</string>
+    <string name="add_password" translatable="false">أضف كلمة المرور</string>
+    <string name="delete_password" translatable="false">أحذف كلمة المرور</string>
+    <string name="password" translatable="false">كلمة المرور</string>
+    <string name="register" translatable="false">سجل</string>
+    <string name="Are_you_sure_you_want_to_delete_all_notes_in" translatable="false">هل أنت متأكد أنك تريد حذف جميع الملاحظات في</string>
+    <string name="Yes" translatable="false">نعم</string>
+    <string name="No" translatable="false">لا</string>
+    <string name="Are_you_sure_you_want_to_delete" translatable="false">هل أنت متأكد أنك تريد حذف</string>
+    <string name="Delete_Folder" translatable="false">أحذف المجلد</string>
+    <string name="Delete_All_Notes" translatable="false">أحذف كل النوتات</string>
+    <string name="The_name_has_been_used_before" translatable="false">تم استخدام الاسم من قبل</string>
+    <string name="Delete" translatable="false">حذف</string>
+    <string name="Error_Input" translatable="false">المدخلات خاطئه</string>
+    <string name="The_data_is_wrong" translatable="false">"البيانات خاطئة "</string>
+    <string name="Are_you_sure_you_want_to_delete_the_note" translatable="false">هل أنت متأكد أنك تريد حذف الملاحظة</string>
+    <string name="qu">\؟</string>
+    <string name="privacy">خصوصية</string>
+</resources>

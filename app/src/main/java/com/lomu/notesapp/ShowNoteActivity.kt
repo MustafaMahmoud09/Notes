@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_show_note.*
 
-
 class ShowNoteActivity : AppCompatActivity() {
     private val sqlLite=SqlLite(this)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,13 +23,13 @@ class ShowNoteActivity : AppCompatActivity() {
     }
     private fun codeBtnDelete() {
         val dialog = AlertDialog.Builder(this)
-            dialog.setMessage("Are you sure you want to delete the note?")
-            dialog.setPositiveButton("Yes") { _, _ ->
+            dialog.setMessage("${resources.getString(R.string.Are_you_sure_you_want_to_delete_the_note)}${resources.getString(R.string.qu)}")
+            dialog.setPositiveButton(resources.getString(R.string.Yes)) { _, _ ->
             sqlLite.delete(intent.extras?.getString("IdNote", "0"),1)
             sqlLite.update(intent.extras?.getString("IdCategory", "0")!!, -1,true)
             finish()
             }
-        dialog.setNegativeButton("No") { _, _ -> }
+        dialog.setNegativeButton(resources.getString(R.string.No)) { _, _ -> }
         val create = dialog.create()
         create.show()
     }

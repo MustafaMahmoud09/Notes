@@ -8,28 +8,17 @@
     android:background="@color/purple_700"
     >
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAddNewNote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin16"
-        android:layout_marginBottom="@dimen/margin32"
-        android:clickable="true"
-        android:src="@drawable/ic_baseline_add_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-    />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin48"
         android:letterSpacing="0.025"
         android:text="@string/folders"
         android:textColor="@color/white"
         android:textSize="@dimen/textSize30"
-        android:layout_marginTop="@dimen/margin48"
+        android:layout_marginStart="@dimen/margin12"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -56,4 +45,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/btnAddNewFolder"
+        android:layout_width="@dimen/margin56"
+        android:layout_height="@dimen/margin56"
+        android:background="@drawable/floating"
+        android:layout_marginEnd="@dimen/margin16"
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/margin32"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

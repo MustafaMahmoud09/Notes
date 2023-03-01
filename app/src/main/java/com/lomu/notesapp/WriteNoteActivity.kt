@@ -9,8 +9,6 @@ import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_write_note.*
-import kotlinx.android.synthetic.main.dialog_add_category.view.*
-import kotlinx.android.synthetic.main.dialog_select_color.*
 import kotlinx.android.synthetic.main.dialog_select_color.view.*
 import java.util.*
 
@@ -144,8 +142,10 @@ class WriteNoteActivity : AppCompatActivity() {
             editTitle.setText("")
         }else{
                 database.update(intent.extras?.getString("idNote","0")!!,note,title,color.toString())
-                finish()
         }
+            Handler().postDelayed(
+                {finish()},200
+            );
         }
     }
 }
