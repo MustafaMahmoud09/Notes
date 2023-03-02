@@ -49,6 +49,7 @@
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/drawable/ic_baseline_color_lens_24.xml" value="0.2555" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2555" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.2555" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/drawable/ic_baseline_edit_note_24.xml" value="0.166" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/drawable/shape_btn_dialog.xml" value="0.121" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/drawable/shape_btn_register.xml" value="0.2555" />
@@ -57,6 +58,7 @@
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-large/activity_register.xml" value="0.536" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-normal/activity_register.xml" value="0.152" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-small/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-small/item_in_recycler.xml" value="0.152" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-sw250dp/item_in_grid.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-sw400dp/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-sw500dp/activity_register.xml" value="0.176" />
@@ -64,21 +66,32 @@
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-w400dp/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-w500dp/activit_regiset.xml" value="0.21164021164021163" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-w500dp/activity_register.xml" value="0.264" />
-        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/activity_register.xml" value="0.152" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/activity_category.xml" value="0.18671875" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/activity_first.xml" value="0.152" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/activity_register.xml" value="0.1" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/activity_show_note.xml" value="0.12" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/activity_write_note.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/dialog_add_category.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/dialog_chose.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/dialog_password.xml" value="0.536" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/dialog_select_color.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/item_in_grid.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout-xlarge/item_in_recycler.xml" value="0.136" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activiry_register.xml" value="0.18671875" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_category.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_first.xml" value="0.4" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_register.xml" value="0.176" />
-        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_show_note.xml" value="0.4" />
-        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_write_note.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_show.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_show_note.xml" value="0.136" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/activity_write_note.xml" value="0.12" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/dialog_add_category.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/dialog_chose.xml" value="0.176" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/dialog_password.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/dialog_select_color.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/item_in_grid.xml" value="0.25" />
-        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/item_in_recycler.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/layout/item_in_recycler.xml" value="0.176" />
         <entry key="..\:/Users/DELL/Desktop/ProjectComplete/NotesApp/app/src/main/res/menu/menu_pass.xml" value="0.25" />
       </map>
     </option>

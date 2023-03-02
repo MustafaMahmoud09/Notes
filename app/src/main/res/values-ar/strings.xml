@@ -9,7 +9,7 @@
     <string name="title" translatable="false">العنوان</string>
     <string name="type_something" translatable="false">اكتب شيئا</string>
     <string name="confirm_password" translatable="false">تاكيد كلمة المرور</string>
-    <string name="add_password" translatable="false">أضف كلمة المرور</string>
+    <string name="add_password" translatable="false">أضف كلمة مرور</string>
     <string name="delete_password" translatable="false">أحذف كلمة المرور</string>
     <string name="password" translatable="false">كلمة المرور</string>
     <string name="register" translatable="false">سجل</string>
@@ -18,7 +18,7 @@
     <string name="No" translatable="false">لا</string>
     <string name="Are_you_sure_you_want_to_delete" translatable="false">هل أنت متأكد أنك تريد حذف</string>
     <string name="Delete_Folder" translatable="false">أحذف المجلد</string>
-    <string name="Delete_All_Notes" translatable="false">أحذف كل النوتات</string>
+    <string name="Delete_All_Notes" translatable="false">أحذف كل الملحوظات</string>
     <string name="The_name_has_been_used_before" translatable="false">تم استخدام الاسم من قبل</string>
     <string name="Delete" translatable="false">حذف</string>
     <string name="Error_Input" translatable="false">المدخلات خاطئه</string>

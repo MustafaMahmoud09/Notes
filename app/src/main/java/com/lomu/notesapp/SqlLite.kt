@@ -48,7 +48,7 @@ class SqlLite(context: Context?)
             val list=LinkedList<Information>()
             val allItem=
                 if(id==0) {
-                    databaseRead.rawQuery("select * from category", null)
+                    databaseRead.rawQuery("select * from category order by id desc", null)
                 }else{
                     databaseRead.rawQuery("select * from category where id=${id}", null)
                 }
@@ -67,7 +67,7 @@ class SqlLite(context: Context?)
          val databaseRead: SQLiteDatabase =this.readableDatabase
          val list=LinkedList<InformationNote>()
          val res =  if(check) {
-             databaseRead.rawQuery("select * from note where id_category=${id.toInt()}", null)
+             databaseRead.rawQuery("select * from note where id_category=${id.toInt()} order by id desc", null)
          }else{
              databaseRead.rawQuery("select * from note where id=${id.toInt()}", null)
          }
@@ -78,7 +78,17 @@ class SqlLite(context: Context?)
          }
          list
      }
-
+    fun select(name:String)=run{
+        val database:SQLiteDatabase=this.readableDatabase
+        val list=LinkedList<Information>()
+        val listItem=database.rawQuery("select * from category where name_category='${name}'",null)
+        listItem.moveToFirst()
+        while (!listItem.isAfterLast){
+            list.add(Information(listItem.getString(0),listItem.getString(1),listItem.getString(2)))
+            listItem.moveToNext()
+        }
+        list
+    }
     fun update(id:String,increment:Int,check:Boolean){
         val contentValue = ContentValues()
         val database: SQLiteDatabase = this.writableDatabase
@@ -103,7 +113,13 @@ class SqlLite(context: Context?)
         database.update("note",contentValue,"id=${id.toInt()}",null)
         database.close()
     }
-
+   fun update(id:Int,name:String) {
+   val database=this.writableDatabase
+   val value=ContentValues()
+   value.put("name_category",name)
+   database.update("category",value,"id=$id",null)
+   database.close()
+   }
     fun delete(id: String?,num:Int) {
         val database: SQLiteDatabase = this.writableDatabase
         when(num) {

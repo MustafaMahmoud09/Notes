@@ -19,6 +19,7 @@
     <item name="layout_17" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_color_lens_24</item>
     <item name="layout_18" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_delete_24</item>
     <item name="layout_19" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_edit_24</item>
+    <item name="layout_20" type="drawable" tools:ignore="MissingDefaultResource">@drawable/ic_baseline_edit_note_24</item>
     <dimen name="margin16">36dp</dimen>
     <dimen name="margin32">70dp</dimen>
     <dimen name="margin24">52dp</dimen>
