@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.dialog_chose.view.*
 import kotlinx.android.synthetic.main.dialog_password.view.btnCancelPassword
@@ -52,24 +53,27 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
             true
         }
         holder.btnEdit?.setOnClickListener {
-            codeBtnUpdateToRecycler(item, position, holder)
+            codeBtnUpdateToRecycler(item, position)
         }
         holder.viewRecycler?.setOnClickListener{
-            intentToCategoryActivity(item)
-        }
+            if(holder.btnEdit!!.isVisible){
+                reset(holder)
+            }else {
+                intentToCategoryActivity(item)
+            }
+            }
         holder.btnDelete?.setOnClickListener {
-            dialogDelete(holder,item, position)
+            dialogDelete(item, position)
         }
     }
 
     private fun codeBtnUpdateToRecycler(
         item: Information,
-        position: Int,
-        holder: Holder
+        position: Int
     ) {
         codeCreateDialogUpdateNameFolder(item)
         view!!.btnSavePassword.setOnClickListener {
-            codeBtnSaveUpdate(item, position, holder)
+            codeBtnSaveUpdate(item, position)
         }
         view!!.btnCancelPassword.setOnClickListener {
             createDialog?.dismiss()
@@ -87,8 +91,7 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
 
     private fun codeBtnSaveUpdate(
         item: Information,
-        position: Int,
-        holder: Holder
+        position: Int
     ) {
         val nameNewFolder = view!!.inputPass.text.toString().trim()
         if (nameNewFolder.isNotEmpty()) {
@@ -99,7 +102,7 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
                 database.update(item.id.toInt(), nameNewFolder)
                 list[position] = Information(item.id, nameNewFolder, item.numberNoteInCategory)
                 notifyItemRangeChanged(position, list.size)
-                reset(holder)
+                notifyDataSetChanged()
                 createDialog?.dismiss()
             }
         }
@@ -118,14 +121,14 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
         context.startActivity(intent)
     }
 
-    private fun dialogDelete(holder:Holder,item: Information, position: Int) {
+    private fun dialogDelete(item: Information, position: Int) {
         createDialog()
         setTextToChangeNameBtn()
         view!!.btnAddPassword.setOnClickListener {
             codeDeleteFolderBeforeExecute(item, position)
         }
         view!!.btnDeletePassword.setOnClickListener {
-            codeBtnDeleteNotesBeforeExecute(holder,item, position)
+            codeBtnDeleteNotesBeforeExecute(item, position)
         }
         view!!.btnCancelBtnPass.setOnClickListener {
             createDialog!!.dismiss()
@@ -134,7 +137,6 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
     }
 
     private fun codeBtnDeleteNotesBeforeExecute(
-        holder:Holder,
         item: Information,
         position: Int
     ) {
@@ -142,19 +144,19 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
         dialog = AlertDialog.Builder(context)
         dialog!!.setMessage("${context.resources.getString(R.string.Are_you_sure_you_want_to_delete_all_notes_in)} ${item.nameCategory}${context.resources.getString(R.string.qu)}")
         dialog!!.setPositiveButton(context.resources.getString(R.string.Yes)) { _, _ ->
-            codeBtnDeleteNotes(holder,item, position)
+            codeBtnDeleteNotes(item, position)
         }
         dialog!!.setNegativeButton(context.resources.getString(R.string.No)) { _, _ -> }
         createDialog=dialog!!.create()
         createDialog!!.show()
     }
 
-    private fun codeBtnDeleteNotes(holder: Holder,item: Information, position: Int) {
+    private fun codeBtnDeleteNotes(item: Information, position: Int) {
         database.delete(item.id, 2)
         database.update(item.id,0,false)
         list[position] = Information(item.id, item.nameCategory, "0")
-        reset(holder)
         notifyItemRangeChanged(position, list.size)
+        notifyDataSetChanged()
     }
 
     private fun reset(holder: Holder) {
@@ -163,7 +165,6 @@ class AdapterRecycler(private val list: LinkedList<Information>,private val cont
         holder.viewRecycler?.backgroundTintList =
             ContextCompat.getColorStateList(context, R.color.colorTypeNoteRecycler)
     }
-
     private fun codeDeleteFolderBeforeExecute(
         item: Information,
         position: Int
